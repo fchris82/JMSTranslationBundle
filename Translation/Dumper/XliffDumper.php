@@ -72,7 +72,7 @@ class XliffDumper implements DumperInterface
         $root->setAttribute('xmlns', 'urn:oasis:names:tc:xliff:document:1.2');
         $root->setAttribute('xmlns:jms', 'urn:jms:translation');
         $root->setAttribute('xmlns:xsi', 'http://www.w3.org/2001/XMLSchema-instance');
-        $root->setAttribute('xmlns:schemaLocation', 'urn:jms:translation https://raw.githubusercontent.com/schmittjoh/JMSTranslationBundle/schema/Resources/schema/custom.xsd');
+        $root->setAttribute('xsi:schemaLocation', 'urn:jms:translation https://raw.githubusercontent.com/schmittjoh/JMSTranslationBundle/schema/Resources/schema/custom.xsd');
         $root->setAttribute('version', '1.2');
 
         $root->appendChild($file = $doc->createElement('file'));
